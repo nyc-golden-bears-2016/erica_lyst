@@ -1,0 +1,13 @@
+<%= form_for(@article) do |f| %>
+
+
+  Title: <%= f.text_field :title %>
+  <br>
+  Body: <%= f.text_area :body %>
+  <br>
+   Enter Article Permission Key: <%= f.text_area :key, value: "" %>
+  <br>
+
+  <%=f.submit "Update the Article"%>
+
+<%end%>
