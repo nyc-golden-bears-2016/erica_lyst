@@ -1,0 +1,20 @@
+<h2><%=@category.name%></h2>
+
+
+<h4><%=@article.title%><h4>
+
+<%=@article.body%>
+
+
+
+<p>key: <%=@article.secret_key%></p>
+
+
+
+
+<p><%= link_to "Edit", edit_article_path(@article)%></p>
+
+<%= button_to 'Delete', @article, method: :delete%>
+
+<%= link_to "Home", categories_path %>
+

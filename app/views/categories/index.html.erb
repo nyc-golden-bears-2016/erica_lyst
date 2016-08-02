@@ -1,0 +1,8 @@
+<h1><%@categories.each do |cat|%></h1>
+  <%= link_to "#{cat.name}", cat%>
+  <br>
+<%end%>
+
+<br>
+<br>
+<p><%= link_to "Make a new category!", new_category_path %></p>
